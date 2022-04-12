@@ -1,0 +1,62 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-direction:column;
+}
+
+.header-menu {
+    display: flex;
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("iot_pic.jpg");
+    background-size:  cover;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    column-gap: 16px;
+    list-style-type: none;
+    flex-direction: column;
+    /*ul ist die Listen der Seite */
+
+}
+h1 { 
+    margin: 0;
+    display:felx;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family:'Pacifico', cursive; 
+    color:rgb(73, 101, 177);
+}
+
+main {
+    display: flex;
+}
+
+section {
+    flex-basis: 80%;
+    padding: 20px;
+}
+
+aside {
+    flex-basis: 20%;
+    padding: 20px;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(207, 149, 135);
+    background-image: url("iot_pic.jpg");
+    background-size: color;
+
+}
