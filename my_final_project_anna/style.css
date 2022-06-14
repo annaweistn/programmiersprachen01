@@ -1,0 +1,81 @@
+body{
+    margin: 0 auto;
+    max-width: 1000px;
+    color: white;
+    background-color: rgb(3, 3, 3);
+    font-family: sans-serif;
+}
+.navbar{
+    justify-content: space-between;
+}
+.auswahl{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+.auswahl img{
+    width: 150px;
+}
+.start-container{
+    text-align: center;
+}
+.start-container input{
+    padding: 20px;
+    font-size: 20pt;
+}
+.start-container form{
+    display: flex;
+    justify-content: center;
+}
+.start-container button{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: pink;
+    font-size: 16pt;
+}
+.bild{
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+.selected{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+#scissors{
+    background-image: url(./bilder/scissors.png);
+}
+#stone{
+    background-image: url(./bilder/stone.png);
+}
+#paper{
+    background-image: url(./bilder/paper.png);
+}
+#laden{
+    text-align: center;
+}
+
+#point{
+    display: none;
+}
+#endeSeite{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.restart-container{
+    margin-top: auto;
+    margin-left: 50px;
+}
+.restart-container button{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #8bc34a;
+    font-size: 16pt;
+}
