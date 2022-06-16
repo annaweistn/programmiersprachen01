@@ -74,8 +74,8 @@
 
             spielerAuswahl.children[0].style = "background-image: url(./bilder/"+spielerWert+".png)";
             computerAuswahl.children[0].style = "background-image: url(./bilder/"+computerWert+".png)";
-            spielerAuswahl.children[1].innerHTML = "Spieler auswahl: "+spielerWert;
-            computerAuswahl.children[1].innerHTML = "Computer auswahl: "+computerWert;
+            spielerAuswahl.children[1].innerHTML = "Your choice: "+spielerWert;
+            computerAuswahl.children[1].innerHTML = "Computer choice: "+computerWert;
 
             if(score.user == 3 || score.computer == 3){
                 if(score.user == 3){
@@ -95,7 +95,7 @@
             endeContainer.children[0].innerHTML = "<p>You won!</p><img src='./bilder/pokal.png'>";
         }else{
             endeContainer.style = "display: flex;";
-            endeContainer.children[0].innerHTML = "<p>Computer won!</p>";
+            endeContainer.children[0].innerHTML = "<p>Computer won 😈 !!</p>";
         }
     }
     function restart(){

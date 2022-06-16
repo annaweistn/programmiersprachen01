@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <audio loop id="song">
+       <source src="./sound/monkey.mp3" type="audio/mp3" >
+    </audio>
+       <!-- Javascript-->
+  <script>
+      window.addEventListener('click', () => {
+          document.getElementById("song").play();
+    });
+</script>
+     <nav>
         <div class="navbar" id="navbar">
             <p id="user"></p>
             <p id="computer">Computer: 0/3</p>
