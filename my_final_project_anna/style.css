@@ -2,6 +2,7 @@ body{
     margin: 0 auto;
     max-width: 1000px;
     color: rgb(252, 249, 249);
+    font-size: xx-large;
     background-color: rgb(3, 3, 3);
     font-family: 'Comic Sans MS';
 }
@@ -42,6 +43,7 @@ body{
         padding: 15px 40px;
         border-radius: 4px;
         font-weight: normal;
+        font-size:large;
        
     }
 .bild{
@@ -82,8 +84,7 @@ body{
     justify-content: center;
     text-align: center;
     font-size:xx-large; /* You won/Computer won */
-    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,
-        0 0 0.2em #87F
+    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,0 0 0.2em #87F;
 
 }
 .restart-container{
