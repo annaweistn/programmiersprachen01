@@ -45,6 +45,8 @@ function play(event) {
   computerAuswahl.style = "display: none";
   punkt.style = "display:none;";
   laden.style = "display:flex;justify-content: center;width:100%;";
+  document.getElementsByClassName("auswahl").setAttribute("disabled", true);
+  
 
   // while we are waiting for the timeout function to be executed, we can press another button many times and then the game can become buggy.
   // to fix this you can disable the buttons whenever you pressed a button and enable them as soon as you get the result
@@ -83,7 +85,6 @@ function play(event) {
       "background-image: url(./bilder/" + computerWert + ".png)";
     spielerAuswahl.children[1].innerHTML = "Your choice: " + spielerWert;
     computerAuswahl.children[1].innerHTML = "Computer choice: " + computerWert;
-
     if (score.user === 3 || score.computer === 3) {
       if (score.user === 3) {
         finish("user");
