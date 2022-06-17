@@ -1,26 +1,27 @@
 body {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 100%;
   color: rgb(252, 249, 249);
-  font-size: xx-large;
+  font-size: large;
   background-color: rgb(3, 3, 3);
   font-family: "Comic Sans MS";
 }
 .navbar {
   justify-content: space-between;
+  padding: 0 1rem;
   font-size: xx-large; /* Score */
   color: rgb(253, 253, 255);
   border-top-width: 12px;
   border-top-style: double;
   border-top-color: rgba(80, 13, 19, 0.91);
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 40px;
 }
 .auswahl {
   display: flex;
   width: 100%;
   justify-content: space-around;
   text-align: center;
-  font-size: x-large; /* Schrfit unter klickbaren figuren */
+  font-size: large; /* Schrfit unter klickbaren figuren */
 }
 .auswahl img {
   width: 150px;
@@ -58,7 +59,7 @@ body {
   margin: auto;
   justify-content: space-between;
   margin-bottom: 5%;
-  font-size: xx-large; /* your choice text */
+  font-size: x-large; /* your choice text */
   color: #f6fafa;
 }
 #scissors {

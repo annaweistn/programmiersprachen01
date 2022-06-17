@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <div class="navbar" id="navbar">
+    <nav class="navbar" id="navbar">
         <p id="user"></p>
         <p id="computer">Computer 0/3</p>
-      </div>
     </nav>
     <div class="ende-container" id="endeSeite">
       <div></div>
@@ -30,6 +28,7 @@
         <input
           type="text"
           id="username"
+          required
           placeholder="Choose username"
           name="username"
           data-min="3"
@@ -77,13 +76,7 @@
     <audio loop id="song">
       <source src="./sound/monkey.mp3" type="audio/mp3" />
     </audio>
-    <!-- Javascript-->
-    <script>
-      window.addEventListener("click", () => {
-        document.getElementById("song").play();
-      });
-    </script>
     <script src="index.js"></script>
-    <!--Muss am Ende vom bodytag sein!-->
+   
   </body>
 </html>
