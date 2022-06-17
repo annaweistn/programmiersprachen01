@@ -44,6 +44,7 @@ function play(event) {
   spielerAuswahl.style = "display: none";
   computerAuswahl.style = "display: none";
   punkt.style = "display:none;";
+  // if you have several styles to assign, move them to a separate class in css and use "classList.add("name of your class")" or "classList.remove("name of your class")" "classList.toggle("name of your class")"
   laden.style = "display:flex;justify-content: center;width:100%;";
 
     setTimeout(function () {
@@ -68,6 +69,9 @@ function play(event) {
       score.user += 1;
       punkt.style = "display:flex;justify-content: center;width:100%;";
     }
+
+    // a small suggestion how you can write the game logic in less lines: the 1st answer here :) https://stackoverflow.com/questions/53730900/more-efficient-choice-comparison-for-rock-paper-scissors 
+
     computer.innerHTML = "Computer " + score.computer + "/3";
     user.innerHTML = username + " " + score.user + "/3";
 
