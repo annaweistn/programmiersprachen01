@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anna Weinstein</title>
+    <title>Anna Weinstein's Game</title>
     <!-- HTML und CSS verlinken-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navbar" id="navbar">
-        <p id="user"></p>
+     <p id="user"></p>
         <p id="computer">Computer 0/3</p>
-    </nav>
+     </nav>
     <div class="ende-container" id="endeSeite">
       <div></div>
       <div class="restart-container">
@@ -25,8 +25,6 @@
     <div class="start-container" id="startSeite">
       <h1>Rock Paper Scissors</h1>
       <form>
-        <!-- right now if you put nothing in the username and just submit the form, it will anyway move you to the game -->
-        <!-- you can add small form validation for putting "required" attribute to your <input/> -->
         <input
           type="text"
           id="username"
@@ -79,6 +77,6 @@
       <source src="./sound/monkey.mp3" type="audio/mp3" />
     </audio>
     <script src="index.js"></script>
-   
+    <!--Muss am Ende vom bodytag sein!-->
   </body>
 </html>

@@ -13,8 +13,8 @@ navScore.style = "display: none;";
 const computer = document.getElementById("computer");
 const user = document.getElementById("user");
 
-let spielerAuswahl = document.getElementById("spielerAuswahl");
-let computerAuswahl = document.getElementById("computerAuswahl");
+const spielerAuswahl = document.getElementById("spielerAuswahl");
+const computerAuswahl = document.getElementById("computerAuswahl");
 
 const punkt = document.getElementById("point");
 
@@ -44,13 +44,15 @@ function play(event) {
   spielerAuswahl.style = "display: none";
   computerAuswahl.style = "display: none";
   punkt.style = "display:none;";
-  // if you have several styles to assign, move them to a separate class in css and use "classList.add("name of your class")" or "classList.remove("name of your class")" "classList.toggle("name of your class")"
   laden.style = "display:flex;justify-content: center;width:100%;";
 
-    setTimeout(function () {
- /*time loading */ laden.style = "display: none;";
-    
-     if (spielerWert === "scissors" && computerWert === "paper") {
+  // while we are waiting for the timeout function to be executed, we can press another button many times and then the game can become buggy.
+  // to fix this you can disable the buttons whenever you pressed a button and enable them as soon as you get the result
+  // you can use "element.setAttribute("disabled", true)" to disable a button and "element.removeAttribute("disabled")" to enable them
+
+  setTimeout(function () {
+   laden.style = "display: none;";
+      if (spielerWert === "scissors" && computerWert === "paper") {
       score.user += 1;
       punkt.style = "display:flex;justify-content: center;width:100%;";
     } else if (spielerWert === "scissors" && computerWert === "stone") {
@@ -69,9 +71,6 @@ function play(event) {
       score.user += 1;
       punkt.style = "display:flex;justify-content: center;width:100%;";
     }
-
-    // a small suggestion how you can write the game logic in less lines: the 1st answer here :) https://stackoverflow.com/questions/53730900/more-efficient-choice-comparison-for-rock-paper-scissors 
-
     computer.innerHTML = "Computer " + score.computer + "/3";
     user.innerHTML = username + " " + score.user + "/3";
 
@@ -112,7 +111,7 @@ function restart() {
   score.user = 0;
   spielContainer.style = "display: block";
   endeContainer.style = "display: none;";
-  computer.innerHTML = "Computer " + score.computer + "/3";
+  computer.innerHTML = "Computer: " + score.computer + "/3";
   user.innerHTML = username + " " + score.user + "/3";
   /* Konfetti emoji muss verschwinden wenn man gewonnen hat */
   punkt.style = "display:none;";

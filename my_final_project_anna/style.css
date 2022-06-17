@@ -7,10 +7,9 @@ body {
   font-family: "Comic Sans MS";
 }
 .navbar {
-  /* set some padding here, e.g. padding: 0 1rem  */
-  justify-content: space-between;
   padding: 0 1rem;
-  font-size: xx-large; /* Score */
+  justify-content: space-between;
+  font-size: x-large; /* Score */
   color: rgb(253, 253, 255);
   border-top-width: 12px;
   border-top-style: double;
@@ -60,7 +59,7 @@ body {
   margin: auto;
   justify-content: space-between;
   margin-bottom: 5%;
-  font-size: x-large; /* your choice text */
+  font-size: large; /* your choice text */
   color: #f6fafa;
 }
 #scissors {
@@ -83,7 +82,6 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  /* you can remove the font-size, it will be inherited from body */
   font-size: xx-large; /* You won/Computer won */
   text-shadow: 0 0 0.2em #87f, 0 0 0.2em #87f, 0 0 0.2em #87f;
 }
