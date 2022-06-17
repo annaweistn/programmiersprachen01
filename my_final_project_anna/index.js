@@ -57,11 +57,8 @@ function play(event) {
   scissors.parentElement.children[1].style = "display:none;";
   
 
-  // while we are waiting for the timeout function to be executed, we can press another button many times and then the game can become buggy.
-  // to fix this you can disable the buttons whenever you pressed a button and enable them as soon as you get the result
-  // you can use "element.setAttribute("disabled", true)" to disable a button and "element.removeAttribute("disabled")" to enable them
-
   setTimeout(function () {
+    /* no buttons/letters while loading anymore */
    laden.style = "display: none;";
    scissors.style = "display:block;";
    paper.style = "display:block;";
