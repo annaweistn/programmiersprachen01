@@ -21,6 +21,10 @@ const punkt = document.getElementById("point");
 const laden = document.getElementById("laden");
 laden.style = "display:none;";
 
+const scissors = document.getElementById('scissors');
+const paper = document.getElementById('paper');
+const stone = document.getElementById('stone');
+
 let username;
 
 let score = {
@@ -45,7 +49,12 @@ function play(event) {
   computerAuswahl.style = "display: none";
   punkt.style = "display:none;";
   laden.style = "display:flex;justify-content: center;width:100%;";
- 
+  scissors.style = "display:none;";
+  paper.style = "display:none;";
+  stone.style = "display:none;";
+  stone.parentElement.children[1].style = "display:none;";
+  paper.parentElement.children[1].style = "display:none;";
+  scissors.parentElement.children[1].style = "display:none;";
   
 
   // while we are waiting for the timeout function to be executed, we can press another button many times and then the game can become buggy.
@@ -54,6 +63,12 @@ function play(event) {
 
   setTimeout(function () {
    laden.style = "display: none;";
+   scissors.style = "display:block;";
+   paper.style = "display:block;";
+   stone.style = "display:block;";
+   stone.parentElement.children[1].style = "display:block;";
+   paper.parentElement.children[1].style = "display:block;";
+   scissors.parentElement.children[1].style = "display:block;";
       if (spielerWert === "scissors" && computerWert === "paper") {
       score.user += 1;
       punkt.style = "display:flex;justify-content: center;width:100%;";
