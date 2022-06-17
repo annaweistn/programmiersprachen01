@@ -10,6 +10,7 @@
   </head>
   <body>
     <nav>
+      <!-- you don't need this div, assign class and id to the <nav> directly -->
       <div class="navbar" id="navbar">
         <p id="user"></p>
         <p id="computer">Computer 0/3</p>
@@ -27,6 +28,8 @@
     <div class="start-container" id="startSeite">
       <h1>Rock Paper Scissors</h1>
       <form>
+        <!-- right now if you put nothing in the username and just submit the form, it will anyway move you to the game -->
+        <!-- you can add small form validation for putting "required" attribute to your <input/> -->
         <input
           type="text"
           id="username"
@@ -78,6 +81,7 @@
       <source src="./sound/monkey.mp3" type="audio/mp3" />
     </audio>
     <!-- Javascript-->
+    <!-- move all the js code to index.js -->
     <script>
       window.addEventListener("click", () => {
         document.getElementById("song").play();
